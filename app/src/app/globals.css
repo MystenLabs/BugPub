@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    /*@apply mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white*/
+    @apply mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-500 dark:text-white;
+  }
+
+  h2 {
+    @apply text-4xl font-extrabold dark:text-white;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb));
+}
+
+button.navbar-link {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px; /* Small border-radius similar to Facebook buttons */
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  background-color: #1877f2; /* Facebook's blue color */
+  color: #fff; /* White text for the button */
+  font-size: 14px; /* Font size adjustment */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button.navbar-link:hover {
+  background-color: #165dbb; /* Darkened blue for hover effect */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table Styles */
+.table-style {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-style th,
+.table-style td {
+  border: 1px solid #f0f2f5;
+  padding: 15px 20px;
+}
+
+.table-style th {
+  background-color: #f5f6f7;
+  color: #4b4f56;
+}
+
+.table-style td {
+  color: #1c1e21;
+}
+
+.table-style tr:hover {
+  background-color: #f5f6f7;
+}
+
+/* Form Styles */
+.bounty-form {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.navbar-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccd0d5; /* Light border similar to Facebook input fields */
+  border-radius: 3px; /* Small border-radius similar to Facebook input fields */
+  margin-top: 5px;
+  font-size: 14px; /* Font size adjustment */
+  background-color: #fff; /* White background for the input fields */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1000px; /* Increase the container width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sidebar.expanded {
+  width: 250px; /* Full width */
+}
+.sidebar.collapsed {
+  width: 50px; /* Minimized width */
+  overflow-x: hidden; /* Hide overflowing content */
+}
+
+@media (max-width: 768px) {
+  .sidebar.expanded {
+    width: calc(100vw - 20px); /* Full width on small screens */
+  }
+}

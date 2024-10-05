@@ -1,0 +1,38 @@
+# IDE directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+sui.log*
+
+# Dependency and build-related directories
+node_modules/
+dist/
+build/
+
+# Move
+move/bug_pub/Move.lock
+move/bug_pub/build
+
+# env files under the setup directory
+setup/*.env
+.publish.res.json
+.vercel
+
+
+app/.env
