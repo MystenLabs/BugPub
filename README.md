@@ -3,9 +3,9 @@
 
 Welcome to the Bug Pub, a place to reward the right kind of attention.
 
-Bug Pub provides a fully Web3 Bug Bounty Audit Platform for Publishing Bug Bounties and Audits.
+Bug Pub provides a fully Web3 Bug Bounty Audit Platform for Publishing Bug Bounties and Audits, and is equipped with trained LLM models for soft audits.
 
-Users now have a web3-native service for managing and participating in bug bounties and publishing security-related research / audits on packages
+Users now have a web3-native service for managing and participating in bug bounties and publishing security-related research / audits on packages.
 
 All Bug bounty operations are managed and interfaced via the [Sui](https://sui.io/) Blockchain.
 
